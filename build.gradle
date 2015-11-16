@@ -1,4 +1,4 @@
-group 'rickirunge'
+group 'com.latibro'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'groovy'
