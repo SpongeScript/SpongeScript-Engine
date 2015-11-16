@@ -1,0 +1,17 @@
+http://spongepowered.github.io/SpongeAPI/index.html
+https://docs.spongepowered.org/en/index.html
+
+
+ScriptEngine
+http://docs.oracle.com/javase/8/docs/api/index.html
+https://docs.oracle.com/javase/7/docs/technotes/guides/scripting/programmer_guide/#evalfile
+https://docs.oracle.com/javase/8/docs/jdk/api/nashorn/index.html
+
+
+
+Inspiration
+https://github.com/walterhiggins/ScriptCraft/blob/master/docs/API-Reference.md
+
+
+Limit classes
+http://stackoverflow.com/questions/32520413/scriptengine-clear-and-dispose
