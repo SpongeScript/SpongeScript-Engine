@@ -33,17 +33,23 @@ class JavaScriptFileCommand implements CommandExecutor {
         File file = new File(new File("scripts"), path)
         src.sendMessage(Texts.of("file absolute: " + file.absolutePath));
 
+        def spongeObject = [
+                "game": game
+        ]
+
         ScriptContext newContext = new SimpleScriptContext();
         Bindings engineScope = newContext.getBindings(ScriptContext.ENGINE_SCOPE);
-        engineScope.put("commandSource", src)
-        engineScope.put("commandContext", args)
-        engineScope.put("game", game)
-        engineScope.put("logger", logger)
-        engineScope.put("plugin", plugin)
+        //engineScope.put("Sponge", spongeObject)
+        //engineScope.put("commandSource", src)
+        //engineScope.put("commandContext", args)
+        //engineScope.put("game", game)
+        //engineScope.put("plugin", plugin)
 
         ScriptEngineManager factory = new ScriptEngineManager()
         ScriptEngine engine = factory.getEngineByName("JavaScript")
-        def result = engine.eval(new FileReader(file), newContext)
+        engine.put("Sponge", spongeObject)
+        //def result = engine.eval(new FileReader(file), newContext)
+        def result = engine.eval("load('scriptengine/scripts/" + file.name + "')")
         if (result) {
             src.sendMessage(Texts.of("result: " + result));
         } else {
