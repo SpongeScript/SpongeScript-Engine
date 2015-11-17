@@ -51,8 +51,8 @@ public class SpongeScriptEnginePlugin {
 
     @Listener
     public void testEvent(InteractEvent event) {
-        event.
-        MessageSinks.toAll().sendMessage(Texts.of("Event hello"))
+        //event.
+        //MessageSinks.toAll().sendMessage(Texts.of("Event hello"))
     }
 
 }
