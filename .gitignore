@@ -10,7 +10,7 @@ build
 dist
 lib
 out
-run
+#run
 target
 *.com
 *.class
@@ -64,7 +64,7 @@ Thumbs.db
 .settings
 .checkstyle
 .factorypath
-run
+#run
 eclipse
 nbproject
 atlassian-ide-plugin.xml

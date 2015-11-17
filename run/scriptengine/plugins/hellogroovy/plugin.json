@@ -1,0 +1,9 @@
+{
+  "id": "HelloGroovy",
+  "name": "Hello Groovy",
+  "version": "1.0",
+  "engine": "Groovy",
+  "main": "hello.groovy",
+  "dependencies": [
+  ]
+}

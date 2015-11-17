@@ -1,0 +1,9 @@
+{
+  "id": "Hello World",
+  "name": "Hello World",
+  "version": "1.0",
+  "engine": "JavaScript",
+  "main": "helloworld.js",
+  "dependencies": [
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "HelloTypeScript",
+  "name": "Hello TypeScript",
+  "version": "1.0",
+  "engine": "TypeScript",
+  "main": "hello.ts",
+  "dependencies": [
+  ]
+}

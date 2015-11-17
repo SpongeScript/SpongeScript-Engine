@@ -1,0 +1,12 @@
+config
+crash-reports
+logs
+mods
+world
+banned-ips.json
+banned-players.json
+eula.txt
+ops.json
+server.properties
+usercache.json
+whitelist.json
