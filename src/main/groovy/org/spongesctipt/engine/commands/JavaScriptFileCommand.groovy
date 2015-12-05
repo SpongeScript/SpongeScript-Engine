@@ -1,7 +1,6 @@
-package com.latibro.sponge.scriptengine.commands
+package org.spongesctipt.engine.commands
 
 import com.google.inject.Inject
-import com.latibro.sponge.scriptengine.SpongeScriptEnginePlugin
 import org.slf4j.Logger
 import org.spongepowered.api.Game
 import org.spongepowered.api.text.Texts
@@ -10,6 +9,7 @@ import org.spongepowered.api.util.command.CommandResult
 import org.spongepowered.api.util.command.CommandSource
 import org.spongepowered.api.util.command.args.CommandContext
 import org.spongepowered.api.util.command.spec.CommandExecutor
+import org.spongesctipt.engine.SpongeScriptEnginePlugin
 
 import javax.script.ScriptContext
 import javax.script.Bindings
@@ -43,13 +43,13 @@ class JavaScriptFileCommand implements CommandExecutor {
         //engineScope.put("commandSource", src)
         //engineScope.put("commandContext", args)
         //engineScope.put("game", game)
-        //engineScope.put("plugin", plugin)
+        //engineScope.put("spongePlugin", spongePlugin)
 
         ScriptEngineManager factory = new ScriptEngineManager()
         ScriptEngine engine = factory.getEngineByName("JavaScript")
         engine.put("Sponge", spongeObject)
         //def result = engine.eval(new FileReader(file), newContext)
-        def result = engine.eval("load('scriptengine/scripts/" + file.name + "')")
+        def result = engine.eval("load('spongescript/scripts/" + file.name + "')")
         if (result) {
             src.sendMessage(Texts.of("result: " + result));
         } else {

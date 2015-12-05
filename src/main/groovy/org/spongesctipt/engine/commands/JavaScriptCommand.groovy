@@ -1,4 +1,4 @@
-package com.latibro.sponge.scriptengine.commands
+package org.spongesctipt.engine.commands
 
 import com.google.inject.Inject
 import org.slf4j.Logger

@@ -1,9 +1,9 @@
-package com.latibro.sponge.scriptengine
+package org.spongesctipt.engine
 
 import com.google.inject.Inject
 import com.google.inject.Injector
-import com.latibro.sponge.scriptengine.commands.JavaScriptCommand
-import com.latibro.sponge.scriptengine.commands.JavaScriptFileCommand
+import org.spongesctipt.engine.commands.JavaScriptCommand
+import org.spongesctipt.engine.commands.JavaScriptFileCommand
 import org.slf4j.Logger
 import org.spongepowered.api.Game
 import org.spongepowered.api.event.Listener
@@ -15,7 +15,7 @@ import org.spongepowered.api.text.sink.MessageSinks
 import org.spongepowered.api.util.command.args.GenericArguments
 import org.spongepowered.api.util.command.spec.CommandSpec
 
-@Plugin(id = "SpongeScriptEngine", name = "SpongeScriptEngine", version = "1.0")
+@Plugin(id = "SpongeScript-Engine", name = "SpongeScript Engine", version = "0.1")
 public class SpongeScriptEnginePlugin {
 
     @Inject private Injector injector;
@@ -27,9 +27,9 @@ public class SpongeScriptEnginePlugin {
 
     @Listener
     public void onGameInit(GameInitializationEvent event) {
-        logger.info("**** Loading plugin")
+        logger.info("**** Loading spongePlugin")
 
-        pluginManager.loadPlugins()
+        pluginManager.loadAll()
 
         CommandSpec jsCommandSpec = CommandSpec.builder()
                 .arguments(GenericArguments.remainingJoinedStrings(Texts.of("script")))
