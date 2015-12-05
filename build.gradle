@@ -1,5 +1,5 @@
-group 'com.latibro'
-version '1.0-SNAPSHOT'
+group 'org.spongescript'
+version '0.1-SNAPSHOT'
 
 apply plugin: 'groovy'
 
