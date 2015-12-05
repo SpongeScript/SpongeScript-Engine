@@ -1,0 +1,10 @@
+{
+  "id": "DirtPunchJS",
+  "name": "Dirt Punch JS",
+  "version": "1.0",
+  "engine": "JavaScript",
+  "main": "dirtpunch.js",
+  "dependencies": [
+  ],
+  "autoload": false
+}

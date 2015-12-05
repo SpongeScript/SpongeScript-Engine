@@ -5,5 +5,6 @@
   "engine": "JavaScript",
   "main": "hello.js",
   "dependencies": [
-  ]
+  ],
+  "autoload": false
 }

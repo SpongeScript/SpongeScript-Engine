@@ -1,0 +1,10 @@
+{
+  "id": "DirtPunchGroovy",
+  "name": "Dirt Punch Groovy",
+  "version": "1.0",
+  "engine": "Groovy",
+  "main": "dirtpunch.groovy",
+  "dependencies": [
+  ],
+  "autoload": false
+}

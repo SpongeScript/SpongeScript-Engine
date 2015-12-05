@@ -1,0 +1,10 @@
+{
+  "id": "TestJavaScript",
+  "name": "Test JavaScript",
+  "version": "1.0",
+  "engine": "JavaScript",
+  "main": "test.js",
+  "dependencies": [
+  ],
+  "autoload": true
+}
